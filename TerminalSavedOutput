@@ -1,0 +1,157 @@
+Last login: Tue Nov  9 10:40:00 on ttys000
+(base) nakulgupta@Nakuls-MacBook-Pro ~ % cd ..
+(base) nakulgupta@Nakuls-MacBook-Pro /Users % open ~/.bash_profile 
+(base) nakulgupta@Nakuls-MacBook-Pro /Users % cd Desktop
+cd: no such file or directory: Desktop
+(base) nakulgupta@Nakuls-MacBook-Pro /Users % ls
+Shared		nakulgupta
+(base) nakulgupta@Nakuls-MacBook-Pro /Users % cd nakulgupta
+(base) nakulgupta@Nakuls-MacBook-Pro ~ % ls
+Applications		Music			get-pip.py
+Creative Cloud Files	Pictures		getting-started
+Desktop			Public			iCloud Drive (Archive)
+Documents		Untitled.ipynb		nltk_data
+Downloads		Untitled1.ipynb		opt
+Google Drive		Untitled2.ipynb		tabpy_log.log
+Library			W6A8F1A9902B5B2637
+Movies			WebinarTest1.ipynb
+(base) nakulgupta@Nakuls-MacBook-Pro ~ % cd Desktop
+(base) nakulgupta@Nakuls-MacBook-Pro Desktop % cd LightHouse/
+(base) nakulgupta@Nakuls-MacBook-Pro LightHouse % cd 1.\ Prep\ Course 
+(base) nakulgupta@Nakuls-MacBook-Pro 1. Prep Course % ls
+1. Jupyter Labs - Tutorial.ipynb	Git
+Bash For Data Science			Untitled.ipynb
+Data Science at Command Level
+(base) nakulgupta@Nakuls-MacBook-Pro 1. Prep Course % cd Bash\ For\ Data\ Science
+(base) nakulgupta@Nakuls-MacBook-Pro Bash For Data Science % mkdir my_folder
+(base) nakulgupta@Nakuls-MacBook-Pro Bash For Data Science % cd my_folder
+(base) nakulgupta@Nakuls-MacBook-Pro my_folder % mkdir another_folder
+(base) nakulgupta@Nakuls-MacBook-Pro my_folder % cd../..
+zsh: no such file or directory: cd../..
+(base) nakulgupta@Nakuls-MacBook-Pro my_folder % cd ..\..
+cd: no such file or directory: ....
+(base) nakulgupta@Nakuls-MacBook-Pro my_folder % cd ..
+(base) nakulgupta@Nakuls-MacBook-Pro Bash For Data Science % touch my_file.txt
+(base) nakulgupta@Nakuls-MacBook-Pro Bash For Data Science % nano my_file.txt
+(base) nakulgupta@Nakuls-MacBook-Pro Bash For Data Science % open my_file.txt
+(base) nakulgupta@Nakuls-MacBook-Pro Bash For Data Science % ls
+my_file.txt	my_folder
+(base) nakulgupta@Nakuls-MacBook-Pro Bash For Data Science % cat my_file.txt
+Pikachu	Electric	none
+Bulbasaur	Grass	Poison
+Charmander	Fire	none
+Squirtle	Water	none
+Caterpie	Bug	none
+Weedle	Bug	Poison
+Pidgey	Normal	Flying
+Ivysaur	Grass	Poison
+Charmeleon	Fire	none
+Wartortle	Water	none
+Metapod	Bug	none
+Kakuna	Bug	Poison
+Pidgeotto	Normal	Flying
+Venusaur	Grass	Poison
+Charizard	Fire	Flying
+Blastoise	Water	none
+Butterfree	Bug	Flying
+Beedrill	Bug	Poison
+Pidgeot	Normal	Flying
+(base) nakulgupta@Nakuls-MacBook-Pro Bash For Data Science % head my_file.txt
+Pikachu	Electric	none
+Bulbasaur	Grass	Poison
+Charmander	Fire	none
+Squirtle	Water	none
+Caterpie	Bug	none
+Weedle	Bug	Poison
+Pidgey	Normal	Flying
+Ivysaur	Grass	Poison
+Charmeleon	Fire	none
+Wartortle	Water	none
+(base) nakulgupta@Nakuls-MacBook-Pro Bash For Data Science % head -n 5 my_file.txt
+Pikachu	Electric	none
+Bulbasaur	Grass	Poison
+Charmander	Fire	none
+Squirtle	Water	none
+Caterpie	Bug	none
+(base) nakulgupta@Nakuls-MacBook-Pro Bash For Data Science % less -S my_file.txt 
+(base) nakulgupta@Nakuls-MacBook-Pro Bash For Data Science % cat my_file.txt | cut -f 2
+Electric
+Grass
+Fire
+Water
+Bug
+Bug
+Normal
+Grass
+Fire
+Water
+Bug
+Bug
+Normal
+Grass
+Fire
+Water
+Bug
+Bug
+Normal
+(base) nakulgupta@Nakuls-MacBook-Pro Bash For Data Science % cat my_file.txt | cut -f 2
+Electric
+Grass
+Fire
+Water
+Bug
+Bug
+Normal
+Grass
+Fire
+Water
+Bug
+Bug
+Normal
+Grass
+Fire
+Water
+Bug
+Bug
+Normal
+(base) nakulgupta@Nakuls-MacBook-Pro Bash For Data Science % cat my_file.txt | cut -f 2 | uniq -c
+   1 Electric
+   1 Grass
+   1 Fire
+   1 Water
+   2 Bug
+   1 Normal
+   1 Grass
+   1 Fire
+   1 Water
+   2 Bug
+   1 Normal
+   1 Grass
+   1 Fire
+   1 Water
+   2 Bug
+   1 Normal
+(base) nakulgupta@Nakuls-MacBook-Pro Bash For Data Science % cat my_file.txt | cut -f 2 | sort | uniq -c
+   6 Bug
+   1 Electric
+   3 Fire
+   3 Grass
+   3 Normal
+   3 Water
+(base) nakulgupta@Nakuls-MacBook-Pro Bash For Data Science % cat my_file.txt | cut -f 2 | sort | uniq -c | sort k1,1
+sort: No such file or directory
+(base) nakulgupta@Nakuls-MacBook-Pro Bash For Data Science % cat my_file.txt | cut -f 2 | sort | uniq -c | sort -k1,1nr
+   6 Bug
+   3 Fire
+   3 Grass
+   3 Normal
+   3 Water
+   1 Electric
+(base) nakulgupta@Nakuls-MacBook-Pro Bash For Data Science % cat my_file.txt | cut -f 2 | sort | uniq -c | sort -k1,1 
+   1 Electric
+   3 Fire
+   3 Grass
+   3 Normal
+   3 Water
+   6 Bug
+(base) nakulgupta@Nakuls-MacBook-Pro Bash For Data Science % 
